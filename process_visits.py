@@ -53,7 +53,6 @@ def process_visits_pythogoras(raw_data, hotspot_data, stream_generator):
                 hotspot["x"], hotspot["y"], 5, input_x, input_y
             ):  # check if a hotspot has been visited
 
-                print(f"hit for {hotspot['id']}")
                 all_visits[hotspot["id"]].append(
                     timestamp
                 )  # Mark the hotspot as visited
@@ -90,7 +89,6 @@ def process_visits_divisive(raw_data, hotspot_data, stream_generator):
                 hotspot["x"], hotspot["y"], 5, input_x, input_y
             ):  # check if a hotspot has been visited
 
-                print(f"hit for {hotspot['id']}")
                 all_visits[hotspot["id"]].append(
                     timestamp
                 )  # Mark the hotspot as visited

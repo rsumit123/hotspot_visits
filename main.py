@@ -50,13 +50,3 @@ output_divisive = pd.DataFrame.from_dict(
 )
 
 output_divisive.to_csv("files/output_divisive.csv")
-
-
-counter_pythogoras = [
-    i for i in all_visits_pythogoras if len(all_visits_pythogoras[i]) > 0
-]
-print(f"Output for pythogoras {counter_pythogoras}")
-
-counter_divisive = [i for i in all_visits_divisive if len(all_visits_divisive[i]) > 0]
-
-print(f"Output for divisive {counter_divisive}")
